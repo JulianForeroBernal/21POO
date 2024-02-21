@@ -1,4 +1,4 @@
-from juego21 import *
+from base import *
 
 class juego:
     def __init__(self):
@@ -15,5 +15,6 @@ class juego:
     def mostrar_juego(self):
         print ("jugador: ")
         self.jugador.mostrar_cartas(True)
+        print("la suma de tus cartas es: ", self.jugador.dar_valor())
         print("casa: ")
         self.casa.mostrar_cartas()
